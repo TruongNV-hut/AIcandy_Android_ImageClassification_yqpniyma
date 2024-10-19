@@ -1,0 +1,56 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'  // Thêm plugin Kotlin
+
+android {
+    namespace "com.aicandy.imageclassification.mobilenet"
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.aicandy.imageclassification.mobilenet"
+        minSdkVersion 21
+        targetSdkVersion 34
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    // Thêm cấu hình Kotlin
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+// Thêm buildscript nếu chưa có ở root build.gradle
+buildscript {
+    ext.kotlin_version = "1.8.0" // hoặc phiên bản Kotlin mới nhất
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation libs.pytorch.android
+    implementation libs.pytorch.android.torchvision
+    implementation libs.appcompat.v7
+    implementation libs.constraint.layout
+    implementation libs.design
+    implementation libs.androidx.monitor
+    testImplementation libs.junit.v412
+    androidTestImplementation libs.runner
+    androidTestImplementation libs.espresso.core
+
+    // Kotlin dependencies
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+}

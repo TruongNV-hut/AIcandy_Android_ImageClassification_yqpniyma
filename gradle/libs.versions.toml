@@ -1,0 +1,56 @@
+[versions]
+agp = "8.1.0"  # Android Gradle Plugin version
+androidx-lifecycle-runtime-ktx = "2.8.6"
+appcompat-v7 = "28.0.0"
+constraint-layout = "2.0.4"
+core-ktx = "1.13.1"
+espresso-core = "3.0.2"
+google-material = "1.12.0"
+jetbrains-kotlinx-coroutines-android = "1.7.3"
+junit-junit = "4.12"
+kotlin = "1.8.20"  # Kotlin version
+androidx-core-ktx = "1.10.1"
+androidx-appcompat = "1.6.1"
+material = "1.9.0"
+androidx-activity = "1.7.2"
+androidx-constraintlayout = "2.1.4"
+androidx-camera = "1.2.3"
+junit = "4.13.2"
+androidx-junit = "1.1.5"
+androidx-espresso = "3.5.1"
+onnxruntime-android = "1.19.2"
+pytorch_android = "2.1.0"
+runner = "1.0.2"
+monitor = "1.7.2"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "androidx-core-ktx" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "androidx-appcompat" }
+appcompat-v7 = { module = "com.android.support:appcompat-v7", version.ref = "appcompat-v7" }
+constraint-layout = { module = "com.android.support.constraint:constraint-layout", version.ref = "constraint-layout" }
+design = { module = "com.android.support:design", version.ref = "appcompat-v7" }
+espresso-core = { module = "com.android.support.test.espresso:espresso-core", version.ref = "espresso-core" }
+jetbrains-kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "jetbrains-kotlinx-coroutines-android" }
+junit-v412 = { module = "junit:junit", version.ref = "junit-junit" }
+lifecycle-runtime-ktx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "androidx-lifecycle-runtime-ktx" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-activity = { group = "androidx.activity", name = "activity-ktx", version.ref = "androidx-activity" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "androidx-constraintlayout" }
+androidx-camera-core = { group = "androidx.camera", name = "camera-core", version.ref = "androidx-camera" }
+androidx-camera-camera2 = { group = "androidx.camera", name = "camera-camera2", version.ref = "androidx-camera" }
+androidx-camera-lifecycle = { group = "androidx.camera", name = "camera-lifecycle", version.ref = "androidx-camera" }
+androidx-camera-view = { group = "androidx.camera", name = "camera-view", version.ref = "androidx-camera" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidx-junit" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "androidx-espresso" }
+material-v1120 = { module = "com.google.android.material:material", version.ref = "google-material" }
+onnxruntime-android = { module = "com.microsoft.onnxruntime:onnxruntime-android", version.ref = "onnxruntime-android" }
+pytorch_android = { module = "org.pytorch:pytorch_android", version.ref = "pytorch_android" }
+pytorch_android_torchvision = { module = "org.pytorch:pytorch_android_torchvision", version.ref = "pytorch_android" }
+runner = { module = "com.android.support.test:runner", version.ref = "runner" }
+androidx-monitor = { group = "androidx.test", name = "monitor", version.ref = "monitor" }
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+
