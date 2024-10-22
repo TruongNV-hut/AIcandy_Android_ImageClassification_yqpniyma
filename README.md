@@ -28,9 +28,8 @@ git clone https://github.com/TruongNV-hut/AIcandy_Android_ImageClassification_yq
 ```
 
 ### Video Demo
-```bash
-Youtube: https://youtu.be/DqUtsML11oA
-```
+Youtube: Youtube: [https://www.youtube.com/@aicandyvn/videos](https://youtu.be/DqUtsML11oA)
+
 
 ### More Information
 
